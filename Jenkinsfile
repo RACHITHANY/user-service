@@ -1,13 +1,13 @@
-pipeline {
+jenkinsfile   -     pipeline {
     agent any
 
     environment {
         AWS_REGION = "us-east-1"
         ECR_REPO = "user-service"
-        ECS_CLUSTER = "dev_cluster"
-        ECS_SERVICE = "user-service-task-service-s4vaoene"
+        ECS_CLUSTER = "Dev_cluster_new"
+        ECS_SERVICE ="user-service-new-service-egsptfmt"
         IMAGE_TAG = "${BUILD_NUMBER}"
-        AWS_ACCOUNT_ID = "023254206328"
+        AWS_ACCOUNT_ID = "063455554726"
         ECR_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
     }
 
